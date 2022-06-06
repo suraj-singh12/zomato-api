@@ -165,7 +165,7 @@ app.get('/orders', (req,res) => {
 });
 
 //-----------------------------------------------------------------------
-// menu on basis of user selected ids
+// menu on basis of user selected ids [how to call this api?]
 app.post('/menuItem', (req, res) => {
     if(Array.isArray(req.body)) {
         db.collection('menu').find({menu_id:{$in:req.body}}).toArray((err, result) => {

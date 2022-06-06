@@ -70,6 +70,7 @@ Use Example: [1,4,6]
 
 2) Place order (Post)
 > Local: http://localhost:9100/placeOrder
+
 > Live:  https://app1api.herokuapp.com/placeOrder
 
 Use Example: 
@@ -94,9 +95,9 @@ Use Example:
 
 
 2) List of order placed of particular user       (Get)
-> Local: http://localhost:9100/orders?email=amit@gmail.com
+> Local: http://localhost:9100/orders?email=test@test.com
 
-> Live:  https://app1api.herokuapp.com/orders?email=amit@gmail.com
+> Live:  https://app1api.herokuapp.com/orders?email=test@test.com
 
 
 3) Update order status                           (Put)
@@ -112,9 +113,8 @@ Use Example:
 }
 
 
-////////////////////////////////
 ## Delete orders                                 (Delete)
-> Local: http://localhost:9100/deleteOrder/628c485d93399d546c136d84
+> Local: http://localhost:9100/deleteOrder/629e3b1be4f3190734649af4
 
-> Live:  https://app1api.herokuapp.com/deleteOrder/628c485d93399d546c136d84
+> Live:  https://app1api.herokuapp.com/deleteOrder/629e3b1be4f3190734649af4
 
