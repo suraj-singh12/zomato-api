@@ -212,6 +212,12 @@ app.delete('/deleteOrder/:id', (req, res) => {
     });
 });
 
+app.delete('/deleteAllOrders', (req,res) => {
+    db.collection('orders').deleteMany({}, (err, result) => {
+        if(err) throw err;
+        res.send('All Orders Deleted');
+    });
+})
 
 // connect to database
 MongoClient.connect(mongoUrl, (err, client) => {

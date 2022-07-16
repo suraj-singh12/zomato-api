@@ -118,3 +118,7 @@ Use Example:
 
 > Live:  https://app1api.herokuapp.com/deleteOrder/629e3b1be4f3190734649af4
 
+## Delete All Orders                            (Delete)
+> Local: http://localhost:9100/deleteAllOrders
+
+> Live:  https://app1api.herokuapp.com/deleteAllOrders
