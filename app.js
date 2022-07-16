@@ -212,6 +212,9 @@ app.delete('/deleteOrder/:id', (req, res) => {
     });
 });
 
+// the update & delete api won't work when you put them in browser.
+// you have to use postman for it or use react.
+// by default the address bar of browser can only run .get() apis
 app.delete('/deleteAllOrders', (req,res) => {
     db.collection('orders').deleteMany({}, (err, result) => {
         if(err) throw err;
