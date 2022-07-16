@@ -189,7 +189,7 @@ app.post('/placeOrder', (req, res) => {
 app.put('/updateOrder/:id', (req, res) => {
     let oid = Number(req.params.id);
     db.collection('orders').updateOne(
-        {orderId:oid},
+        {id:oid},   // updated `orderId` to `id` here because our data has nothing as orderId, we just name it id (in database order's data)
         {
             $set:{
                 "status":req.body.status, 
