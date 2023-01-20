@@ -14,11 +14,11 @@ let db;
 let authKey = require('./auth-key.json').key;
 
 //middleware 
-let cors = require('cors');
+// let cors = require('cors');
 let bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-app.use(cors());
+// app.use(cors());
 
 
 function auth(key) {
